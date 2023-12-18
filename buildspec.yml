@@ -15,11 +15,11 @@ env:
     - variable
   secrets-manager:
     key: secret-id:json-key:version-stage:version-id
-  git-credential-helper: flase | true
+  git-credential-helper: no | yes
 
 proxy:
-  upload-artifacts: flase | true
-  logs: flase | true
+  upload-artifacts: no | yes
+  logs: no | yes
 
 batch:
   fast-fail: false | true
@@ -77,17 +77,17 @@ reports:
       - location
       - location
     base-directory: location
-    discard-paths: true | flase
+    discard-paths: no | yes
     file-format: report-format
 artifacts:
   files:
     - location
     - location
   name: artifact-name
-  discard-paths: true | flase
+  discard-paths: no | yes
   base-directory: location
   exclude-paths: excluded paths
-  enable-symlinks: flase | true
+  enable-symlinks: no | yes
   s3-prefix: prefix
   secondary-artifacts:
     artifactIdentifier:
@@ -95,13 +95,13 @@ artifacts:
         - location
         - location
       name: secondary-artifact-name
-      discard-paths: true | flase
+      discard-paths: no | yes
       base-directory: location
     artifactIdentifier:
       files:
         - location
         - location
-      discard-paths: true | flase
+      discard-paths: no | yes
       base-directory: location
 cache:
   paths:
