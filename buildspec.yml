@@ -15,11 +15,11 @@ env:
     - variable
   secrets-manager:
     key: secret-id:json-key:version-stage:version-id
-  git-credential-helper: no | yes
+  git-credential-helper: flase | true
 
 proxy:
-  upload-artifacts: no | yes
-  logs: no | yes
+  upload-artifacts: flase | true
+  logs: flase | true
 
 batch:
   fast-fail: false | true
@@ -87,7 +87,7 @@ artifacts:
   discard-paths: true | flase
   base-directory: location
   exclude-paths: excluded paths
-  enable-symlinks: no | yes
+  enable-symlinks: flase | true
   s3-prefix: prefix
   secondary-artifacts:
     artifactIdentifier:
