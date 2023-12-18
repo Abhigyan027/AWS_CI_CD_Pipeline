@@ -77,14 +77,14 @@ reports:
       - location
       - location
     base-directory: location
-    discard-paths: no | yes
+    discard-paths: true | flase
     file-format: report-format
 artifacts:
   files:
     - location
     - location
   name: artifact-name
-  discard-paths: no | yes
+  discard-paths: true | flase
   base-directory: location
   exclude-paths: excluded paths
   enable-symlinks: no | yes
@@ -95,13 +95,13 @@ artifacts:
         - location
         - location
       name: secondary-artifact-name
-      discard-paths: no | yes
+      discard-paths: true | flase
       base-directory: location
     artifactIdentifier:
       files:
         - location
         - location
-      discard-paths: no | yes
+      discard-paths: true | flase
       base-directory: location
 cache:
   paths:
